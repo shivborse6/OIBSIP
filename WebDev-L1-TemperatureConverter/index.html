@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tempora | Temperature Converter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section class="converter-card">
+
+            <!-- Header -->
+            <div class="header">
+
+                <div class="logo">
+                    <span>°</span> Tempora
+                </div>
+
+                <p class="tagline">
+                    Simple. Fast. Accurate.
+                </p>
+
+            </div>
+
+
+            <!-- Main Content -->
+            <div class="content">
+
+                <div class="intro">
+
+                    <p class="eyebrow">TEMPERATURE CONVERTER</p>
+
+                    <h1>
+                        Convert temperature
+                        <span>instantly.</span>
+                    </h1>
+
+                    <p class="description">
+                        Enter a temperature, choose its unit, and get
+                        Celsius, Fahrenheit, and Kelvin values instantly.
+                    </p>
+
+                </div>
+
+
+                <!-- Input Area -->
+                <div class="input-section">
+
+                    <label for="temperature">
+                        Temperature
+                    </label>
+
+                    <div class="input-row">
+
+                        <input
+                            type="number"
+                            id="temperature"
+                            placeholder="Enter temperature"
+                            step="any"
+                            autocomplete="off"
+                        >
+
+                        <select id="unit">
+
+                            <option value="celsius">
+                                Celsius (°C)
+                            </option>
+
+                            <option value="fahrenheit">
+                                Fahrenheit (°F)
+                            </option>
+
+                            <option value="kelvin">
+                                Kelvin (K)
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <p id="error-message" class="error-message"></p>
+
+                    <button id="convert-btn" type="button">
+                        Convert Temperature
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <!-- Results -->
+                <div class="results-section">
+
+                    <div class="results-heading">
+                        <h2>Conversion Results</h2>
+                        <span>ALL UNITS</span>
+                    </div>
+
+
+                    <div class="results-grid">
+
+                        <!-- Celsius -->
+                        <div class="result-card">
+
+                            <div class="result-icon">
+                                °C
+                            </div>
+
+                            <div>
+                                <p>Celsius</p>
+                                <h3 id="celsius-result">—</h3>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Fahrenheit -->
+                        <div class="result-card">
+
+                            <div class="result-icon">
+                                °F
+                            </div>
+
+                            <div>
+                                <p>Fahrenheit</p>
+                                <h3 id="fahrenheit-result">—</h3>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Kelvin -->
+                        <div class="result-card">
+
+                            <div class="result-icon">
+                                K
+                            </div>
+
+                            <div>
+                                <p>Kelvin</p>
+                                <h3 id="kelvin-result">—</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer -->
+            <footer>
+
+                <p>
+                    Built with HTML5, CSS3 & Vanilla JavaScript
+                </p>
+
+                <span>
+                    Task 3 · Oasis Infobyte
+                </span>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
